@@ -1,8 +1,7 @@
 @import url('https://fonts.googleapis.com/css?family=Raleway:300');
 
 body {
-  background-image: url("img/home-background.jpg");
-/*  background-color: white;*/
+  background-image: url("../img/home-background.jpg");
   background-size: cover;
 }
 
@@ -25,8 +24,7 @@ body {
 }
 
 .home-content {
-  margin-left: 5%;
-  vertical-align: text-top;
+  font-family: 'Raleway', sans-serif;
   color: #ffffff;
 }
 
@@ -61,29 +59,3 @@ body {
   text-decoration: none;
   font-family: 'Raleway', sans-serif;
 }
-
-/*SLIDING PAGES*/
-
-/*.content-wrap {
-  display: block;
-  position: absolute;
-  margin-top: 5em;
-}*/
-
-/*#home {
-  background-color: red;
-  display: inline-block;
-  width: 960px;
-}
-
-#content {
-  background-color: blue;
-  display: inline-block;
-  width: 960px;
-}
-
-#about {
-  background-color: yellow;
-  display: inline-block;
-  width: 960px;
-}*/

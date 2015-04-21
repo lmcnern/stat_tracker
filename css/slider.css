@@ -1,10 +1,11 @@
 
 /*Holds main content div*/
+/*NOTE: If making changes to div-wrap size, remember to also change data-pos of list elements*/
 
 #div-wrap {
   width: 78vw;
   height: 35vw;
-  border: 5px red solid;
+/*  border: 5px red solid;*/
   margin-left: 10%;
   margin-top: 10%;
   margin-bottom: 10%;
@@ -25,12 +26,11 @@
   height: 86.5%;
   white-space: normal;
   width: 78vw;
-  text-align: center;
-  padding-top: 70px;
+  padding-top: 5vw;
 }
 
 #home {
-  background-color: #0099CC;
+/*  background-color: #0099CC;*/
   width: 78vw;
 }
 
