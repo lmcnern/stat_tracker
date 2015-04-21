@@ -1,8 +1,5 @@
-'useStrict';
-
-function testAlert() {
+$("#selectMenu").change(function() {
   console.log('ALERTED');
-};
-
+});
 
 
