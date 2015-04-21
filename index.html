@@ -3,6 +3,7 @@
   <head>
     <link rel="stylesheet" type="text/css" href="style.css"/>
     <link rel="stylesheet" type="text/css" href="component.css"/>
+    <link rel="stylesheet" type="text/css" href="slider.css"/>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <title>NBA Stat Tracker</title>
@@ -17,17 +18,19 @@
       </div>
 
 <!-- Sliding Page Begin -->
-      <div class="page-wrap">
-        <div id="home">
-          <p>HOME HOME HOME</p>
-        </div>
+      <div id="div-wrap">
+        <div id="content-wrap">
+          <div id="home" class="main-content">
+            <p>HOME HOME HOME</p>
+          </div>
 
-        <div id="content">
-          <p>CONTENT CONTENT CONTENT</p>
-        </div>
+          <div id="content" class="main-content">
+            <p>CONTENT CONTENT CONTENT</p>
+          </div>
 
-        <div id="about">
-          <p>ABOUT ABOUT ABOUT</p>
+          <div id="about" class="main-content">
+            <p>ABOUT ABOUT ABOUT</p>
+          </div>
         </div>
       </div>
 <!-- Sliding Page End -->
@@ -37,9 +40,9 @@
         <div class="container">
           <div class="dotstyle dotstyle-fillin">
             <ul>
-              <li class="current"><a href="#">Home</a></li>
-              <li><a href="#">About</a></li>
-              <li><a href="#">Products</a></li>
+              <li class="current"><a href="#home">Home</a></li>
+              <li><a href="#content">Content</a></li>
+              <li><a href="#about">About</a></li>
             </ul>
           </div>
         </div>
@@ -49,6 +52,7 @@
     </div>
     <script src="lib/jquery.js"></script>
     <script src="lib/dots.js"></script>
+<!--     // <script src="lib/prefixfree.min.js"></script> -->
     <script>
       [].slice.call(document.querySelectorAll('.dotstyle > ul')).forEach(function(nav) {
         new DotNav(nav, {
