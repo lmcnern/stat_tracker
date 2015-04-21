@@ -2,7 +2,7 @@
 <html lang="en">
   <head>
     <link rel="stylesheet" type="text/css" href="style.css"/>
-    <link rel="stylesheet" type="type/css" href="lib/slick/slick.css"/>
+    <link rel="stylesheet" type="text/css" href="component.css"/>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <title>NBA Stat Tracker</title>
@@ -32,13 +32,31 @@
       </div>
 <!-- Sliding Page End -->
 
+<!-- Nav Footer Begin -->
       <div id="fixed-footer">
+        <div class="container">
+          <div class="dotstyle dotstyle-fillin">
+            <ul>
+              <li class="current"><a href="#">Home</a></li>
+              <li><a href="#">About</a></li>
+              <li><a href="#">Products</a></li>
+            </ul>
+          </div>
+        </div>
       </div>
+<!-- Nav Footer End -->
 
     </div>
-    <script src="slick_init.js"></script>
     <script src="lib/jquery.js"></script>
-    <script type="text/javascript" src="lib/slick/slick.min.js"></script>
+    <script src="lib/dots.js"></script>
+    <script>
+      [].slice.call(document.querySelectorAll('.dotstyle > ul')).forEach(function(nav) {
+        new DotNav(nav, {
+          callback : function(idx) {
+          }
+        });
+      });
+    </script>
   </body>
 </html>
 
