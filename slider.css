@@ -1,0 +1,46 @@
+
+/*Holds main content div*/
+
+#div-wrap {
+  width: 78vw;
+  height: 35vw;
+  border: 5px red solid;
+  margin-left: 10%;
+  margin-top: 10%;
+  margin-bottom: 10%;
+  overflow: hidden;
+}
+
+/*Holds sliding pages*/
+
+#content-wrap {
+  width: 234vw;
+  position: relative;
+  left: 0px;
+  transition: left .5s ease-in-out;
+}
+
+.main-content {
+  float: left;
+  height: 86.5%;
+  white-space: normal;
+  width: 78vw;
+  text-align: center;
+  padding-top: 70px;
+}
+
+#home {
+  background-color: #0099CC;
+  width: 78vw;
+}
+
+/*#content {
+  background-color: #FFCC00;
+  width: 78vw;
+}
+
+#about {
+  background-color: #FF6666;
+  width: 78vw;
+}
+*/
