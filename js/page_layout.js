@@ -1,4 +1,4 @@
-var links = document.querySelectorAll(".content-links");
+var links = document.querySelectorAll("#content-links");
 var wrapper = document.querySelector("#content-wrap");
 
 // activeLink displays current selection

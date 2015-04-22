@@ -12,10 +12,12 @@
   <body>
     <div id="wrap">
       <div id="fixed-header">
-        <a id="logo-link" href="#home">NBA STAT TRACKER</a>
-        <a id="home-link" href="#home">HOME</a>
-        <a id="content-link" href="#content">CONTENT</a>
-        <a id="about-link" href="#about">ABOUT</a>
+
+        <!-- Commented out to fix bugs -->
+<!--         <a id="logo-link" class="content-links" href="#home" data-pos="0vw">NBA STAT TRACKER</a>
+        <a id="about-link" class="content-links" href="#about" data-pos="-156vw">ABOUT</a>
+        <a id="content-link" class="content-links" href="#content" data-pos="-78vw">CONTENT</a>
+        <a id="home-link" class="content-links" href="#home" data-pos="0vw">HOME</a> -->
       </div>
 
 <!-- Sliding Page Begin -->
@@ -23,7 +25,7 @@
         <div id="content-wrap">
           <div id="home" class="main-content">
             <h1 class="home-content">NBA STAT TRACKER</h1>
-            <h4 class="home-content">Cool NBA stat tracker API. Select the statistics you wish to see from the drop down menu to see them generated into a chart. Our data is up to date! Available statistics include player efficiency rating, true shooting percentage, 3pt attempts, free throw attempt rates, and more. The demand for basketball statistics is at an all time high and we aim to be a slam dunk.</h4>
+            <h4 class="home-content">Cool NBA stat tracker API.  Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis non varius nisl, ac congue mi. Curabitur hendrerit tortor id vehicula blandit. Ut a placerat velit. Donec sed sapien et enim molestie volutpat in at lacus. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Phasellus efficitur elit vitae sem blandit tristique. Integer quis sapien leo. Sed elementum accumsan eros, eu elementum orci pellentesque at. Nam ornare mattis odio ac pharetra.</h4>
           </div>
 
           <div id="content" class="main-content">
@@ -45,9 +47,9 @@
         <div class="container">
           <div class="dotstyle dotstyle-fillin">
             <ul>
-              <li class="content-links"><a href="#home" data-pos="0vw">Home</a></li>
-              <li class="content-links"><a href="#content" data-pos="-78vw">Content</a></li>
-              <li class="content-links"><a href="#about" data-pos="-156vw">About</a></li>
+              <li class="current" id="content-links"><a href="#home" data-pos="0vw">Home</a></li>
+              <li id="content-links"><a href="#content" data-pos="-78vw">Content</a></li>
+              <li id="content-links"><a href="#about" data-pos="-156vw">About</a></li>
             </ul>
           </div>
         </div>
@@ -59,8 +61,6 @@
     <script src="lib/dots.js"></script>
     <script src="js/page_layout.js"></script>
     <script src="js/about_page.js"></script>
-    <script src="js/contact.js"></script>
-    <script src='app.js'</script>
     <script>
       [].slice.call(document.querySelectorAll('.dotstyle > ul')).forEach(function(nav) {
         new DotNav(nav, {
