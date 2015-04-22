@@ -11,8 +11,6 @@ $.ajax({
   }
 });
 
-
-
 //Create empty array for usable data
 var myData2 = [];
 
@@ -28,8 +26,6 @@ function cleanData(value, index, ar) {
 	}
 }
 myData.forEach(cleanData);
-
-
 
 //Graph Player Efficiency Rating
 var graphPER = function() {
