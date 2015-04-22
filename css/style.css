@@ -23,9 +23,18 @@ body {
   left: 0;
 }
 
-.home-content {
+.main-content {
   font-family: 'Raleway', sans-serif;
   color: #ffffff;
+}
+
+.home-content {
+  width: 30em;
+}
+
+.about-content {
+  width: 30em;
+  text-align: justify;
 }
 
 #logo-link {

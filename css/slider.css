@@ -5,7 +5,6 @@
 #div-wrap {
   width: 78vw;
   height: 35vw;
-/*  border: 5px red solid;*/
   margin-left: 10%;
   margin-top: 10%;
   margin-bottom: 10%;
@@ -40,7 +39,6 @@
 }
 
 #about {
-  background-color: #FF6666;
   width: 78vw;
 }
 
