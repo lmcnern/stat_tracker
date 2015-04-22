@@ -10,5 +10,5 @@ app.use(function(req, res, next) {
 })
 
 app.listen(app.get('port'), function() {
-  console.log('app is running with localhost:' +app.get('port'));
+  console.log('The server is currently running on localhost: ' + app.get('port') + '!');
 })
