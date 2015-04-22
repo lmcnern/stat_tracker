@@ -10,34 +10,45 @@
     <title>NBA Stat Tracker</title>
   </head>
   <body>
-    <div id="wrap">
-      <div id="fixed-header">
+    <nav id="wrap">
+      <nav id="fixed-header">
         <a id="logo-link" href="#home">NBA STAT TRACKER</a>
         <a id="home-link" href="#home">HOME</a>
         <a id="content-link" href="#content">CONTENT</a>
         <a id="about-link" href="#about">ABOUT</a>
-      </div>
+      </nav>
 
 <!-- Sliding Page Begin -->
-      <div id="div-wrap">
-        <div id="content-wrap">
-          <div id="home" class="main-content">
+      <article id="div-wrap">
+        <article id="content-wrap">
+          <article id="home" class="main-content">
             <h1 class="home-content">NBA STAT TRACKER</h1>
             <h4 class="home-content">Cool NBA stat tracker API.  Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis non varius nisl, ac congue mi. Curabitur hendrerit tortor id vehicula blandit. Ut a placerat velit. Donec sed sapien et enim molestie volutpat in at lacus. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Phasellus efficitur elit vitae sem blandit tristique. Integer quis sapien leo. Sed elementum accumsan eros, eu elementum orci pellentesque at. Nam ornare mattis odio ac pharetra.</h4>
-          </div>
+          </article>
 
-          <div id="content" class="main-content">
+          <article id="content" class="main-content">
             <p>CONTENT CONTENT CONTENT</p>
-          </div>
+              <select id="selectMenu">
+                <option id="PER">Player Efficiency Rating</option>
+                <option id="TSP">True Shooting Percentage</option>
+                <option id="3PA">3pt Attempts</option>
+                <option id="FTAR">Free Throw Attempt Rate</option>
+                <option id="OWS">Offensive Win Shares</option>
+                <option id="DWS">Defensive Win Shares</option>
+                <option id="TWS">Total Win Shares</option>
+                <option id="BPM">Box Plus/Minus</option>
+                <option id="VOR">Value Over Replacement</option>
+              </select>
+          </article>
 
-          <div id="about" class="main-content">
+          <article id="about" class="main-content">
             <h1 class="about-content">OUR TEAM</h1>
             <p class="about-content">We are a team of passionate individuals dedicated to bringing you basketball statistics on demand, in a responsive and generally attractive looking chart of exciting data. We love giving thumbs up and high fives.</p>
             <h4 class="about-content">Compliments?  Comments?  Concerns?</h4>
             <p id="emailTo" class="about-content"></p>
-          </div>
-        </div>
-      </div>
+          </article>
+        </article>
+      </article>
 <!-- Sliding Page End -->
 
 <!-- Nav Footer Begin -->
@@ -54,7 +65,7 @@
       </div>
 <!-- Nav Footer End -->
 
-    </div>
+    </nav>
     <script src="lib/jquery.js"></script>
     <script src="lib/dots.js"></script>
     <script src="js/page_layout.js"></script>
