@@ -46,7 +46,7 @@ body {
   font-family: 'Raleway', sans-serif;
 }
 
-#home-link {
+#about-link {
   padding: 2em 1em 2em 1em;
   color: #000000;
   float: right;
@@ -62,7 +62,7 @@ body {
   font-family: 'Raleway', sans-serif;
 }
 
-#about-link {
+#home-link {
   padding: 2em 1em 2em 1em;
   color: #000000;
   float: right;
