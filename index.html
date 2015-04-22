@@ -1,9 +1,10 @@
 <!DOCTYPE>
 <html lang="en">
   <head>
-    <link rel="stylesheet" type="text/css" href="style.css"/>
-    <link rel="stylesheet" type="text/css" href="component.css"/>
-    <link rel="stylesheet" type="text/css" href="slider.css"/>
+    <link rel="stylesheet" type="text/css" href="css/style.css"/>
+    <link rel="stylesheet" type="text/css" href="css/component.css"/>
+    <link rel="stylesheet" type="text/css" href="css/slider.css"/>
+    <link rel="shortcut icon" href="img/temp_favicon.png" type="image/x-icon"/>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <title>NBA Stat Tracker</title>
@@ -11,17 +12,18 @@
   <body>
     <div id="wrap">
       <div id="fixed-header">
-        <a id="logo-link" href="#home">NBA Stat Tracker</a>
-        <a id="home-link" href="#home">Home</a>
-        <a id="content-link" href="#content">Content</a>
-        <a id="about-link" href="#about">About</a>
+        <a id="logo-link" href="#home">NBA STAT TRACKER</a>
+        <a id="home-link" href="#home">HOME</a>
+        <a id="content-link" href="#content">CONTENT</a>
+        <a id="about-link" href="#about">ABOUT</a>
       </div>
 
 <!-- Sliding Page Begin -->
       <div id="div-wrap">
         <div id="content-wrap">
           <div id="home" class="main-content">
-            <p>HOME HOME HOME</p>
+            <h1 class="home-content">NBA STAT TRACKER</h1>
+            <h4 class="home-content">Cool NBA stat tracker API.  Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis non varius nisl, ac congue mi. Curabitur hendrerit tortor id vehicula blandit. Ut a placerat velit. Donec sed sapien et enim molestie volutpat in at lacus. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Phasellus efficitur elit vitae sem blandit tristique. Integer quis sapien leo. Sed elementum accumsan eros, eu elementum orci pellentesque at. Nam ornare mattis odio ac pharetra.</h4>
           </div>
 
           <div id="content" class="main-content">
@@ -29,7 +31,10 @@
           </div>
 
           <div id="about" class="main-content">
-            <p>ABOUT ABOUT ABOUT</p>
+            <h1 class="about-content">OUR TEAM</h1>
+            <p class="about-content">We are a team of passionate individuals dedicated to bringing you basketball statistics on demand, in a responsive and generally attractive looking chart of exciting data. We love giving thumbs up and high fives.</p>
+            <h4 class="about-content">Compliments?  Comments?  Concerns?</h4>
+            <p id="emailTo" class="about-content"></p>
           </div>
         </div>
       </div>
@@ -40,9 +45,9 @@
         <div class="container">
           <div class="dotstyle dotstyle-fillin">
             <ul>
-              <li class="current"><a href="#home">Home</a></li>
-              <li><a href="#content">Content</a></li>
-              <li><a href="#about">About</a></li>
+              <li class="content-links"><a href="#home" data-pos="0vw">Home</a></li>
+              <li class="content-links"><a href="#content" data-pos="-78vw">Content</a></li>
+              <li class="content-links"><a href="#about" data-pos="-156vw">About</a></li>
             </ul>
           </div>
         </div>
@@ -52,11 +57,12 @@
     </div>
     <script src="lib/jquery.js"></script>
     <script src="lib/dots.js"></script>
-<!--     // <script src="lib/prefixfree.min.js"></script> -->
+    <script src="js/page_layout.js"></script>
+    <script src="js/about_page.js"></script>
     <script>
       [].slice.call(document.querySelectorAll('.dotstyle > ul')).forEach(function(nav) {
         new DotNav(nav, {
-          callback : function(idx) {
+          callback: function(idx) {
           }
         });
       });
