@@ -1,19 +1,19 @@
 'use strict'
 
-var e = document.getElementById('selectMenu');
-var strUser = e.options[e.selectedIndex].value;
+// var e = document.getElementById('selectMenu');
+// var strUser = e.options[e.selectedIndex].value;
 
 
 
-console.log(strUser);
+// console.log(strUser);
 
 var barData = {
-  labels : ["Steph Curry","Lebron James","Lance Stephenson","Javale McGee","Russell Westbrook","Demarcus Cousins"],
-  datasets : [
+  labels: myLabel(sorter('FTr')),
+  datasets: [
     {
-      fillColor : "#66FF66",
-      strokeColor : "#006600",
-      data : [456,479,324,569,702,600]
+      fillColor: "#66FF66",
+      strokeColor: "#006600",
+      data: myData(sorter('FTr'))
     },
     // {
     //   fillColor : "rgba(73,188,170,0.4)",
