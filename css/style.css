@@ -30,6 +30,7 @@ body {
 
 .home-content {
   width: 30em;
+  text-align: justify;
 }
 
 .about-content {
