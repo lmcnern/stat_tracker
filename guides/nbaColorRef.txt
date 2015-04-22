@@ -1,0 +1,147 @@
+NBA Team Colors in hexcode and RGB format
+
+//consider making a default fill color of grey for all teams
+
+ATLANTA HAWKS
+line [blue] #000080 RGB(0,0,128)
+point [red] #FF0000 RGB(255,0,0)
+fill [grey] #C0C0C0 RGB(192,192,192)
+
+BOSTON CELTICS
+line [black] #000000 RGB(0,0,0)
+point [green] #009E60 RGB(0,158,96)
+
+BROOKLYN NETS
+**the only color listed is black?**
+line [black] #000000 RGB(0,0,0)
+point [black] #000000
+
+CHARLOTTE HORNETS
+line [blue] #1D1160 RGB(29,17,96)
+point [turquiose] #008CA8 RGB(0,140,168)
+fill [grey] #A1A1A4 RGB(161,161,164)
+
+CHICAGO BULLS
+line [black] #000000 RGB(0,0,0)
+point [red] #D4001F RGB(212,0,31)
+
+CLEVELAND CAVALIERS
+line [blue] #002D62 RGB(0,45,98)
+point [dark red] #860038 RGB(134,0,56)
+fill [yellow] #FDBB30 RGB(253,187,48)
+
+DALLAS MAVERICKS
+line [dark blue] #072156 RGB(7,33,86)
+point [light blue] #0B60AD RGB(11,96,173)
+fill [grey] #A9A9A9 RGB(169,169,169)
+
+DENVER NUGGETS
+line [gold] #FDB827 RGB(253,184,39)
+point [dark blue] #002D62 RGB(0,45,98)
+fill [light blue] #4B90CD RGB(75,144,205)
+
+DETROIT PISTONS
+line [dark blue] #00519A RGB(0,81,154)
+point [red] #EB003C RGB(235,0,60)
+fill [very dark blue] #041E40 RGB(4,30,64)
+
+GOLDEN STATE WARRIORS
+line [blue] #04529C RGB(4,82,156)
+point [yellow] #FFCC33 RGB(255,204,51)
+
+HOUSTON ROCKETS
+line [red] #CE1138 RGB(206,17,56)
+point [black] #000000 RGB(0,0,0)
+fill [grey] #CCCCCC RGB(204,204,204)
+
+INDIANA PACERS
+line [yellow] #FFC322 RGB(9,44,87)
+point [blue] #092C57 RGB(9,44,87)
+fill [grey] #C0C0C0 RGB(192,192,192)
+
+LA CLIPPERS
+line [blue] #146AA2 RGB(20,106,162)
+point [red] #EE2944 RGB(238,41,68)
+
+LA LAKERS
+line [purple] #4A2583 RGB(74,37,131)
+point [gold] #F5AF1B RGB(245,175,27)
+
+MEMPHIS GRIZZLIES
+line [dark blue] #001F70 RGB(0,31,112)
+point [pale blue] #BED4E9 RGB(115,153,198)
+fill [soft blue] #7399C6 RGB(115,153,198)
+bonus color [gold] #FDB927 RGB(253,185,39)
+
+MIAMI HEAT
+line [red] #B62630 RGB(182,38,48)
+point [black] #000000 RGB(0,0,0)
+fill [gold] #FF9F00 RGB(255,159,0)
+
+MILWAUKEE BUCKS
+line [green] #003614 RGB(0,54,20)
+point [red] #E32636 RGB(227,38,54)
+fill [grey] #C0C0C0 RGB(192,192,192)
+
+MINNESOTA TIMBERWOLVES
+line [blue] #0F4D92 RGB(15,77,146)
+point [green] #50C878 RGB(80,200,120)
+fill [grey/purple] #8C92AC RGB(140,146,172)
+
+NEW ORLEANS PELICANS
+line [blue] #002B5C RGB(0,43,92)
+point [gold] #B4975A RGB(180,151,90)
+fill [red] #E31836 RGB(227,24,54)
+
+NEW YORK KNICKS
+line [orange] #FF7518 RGB(255,117,24)
+point [blue] #0953A0 RGB(9,83,160)
+fill [grey] #C0C0C0 RGB(192,192,192)
+
+OKLAHOMA CITY THUNDER
+line [blue] #007DC3 RGB(0,125,195)
+point [orange] #F05133 RGB(240,81,51)
+fill [yellow] #FDBB30 RGB(253,187,48)
+
+ORLANDO MAGIC
+line [black] #000000 RGB(0,0,0)
+point [blue] #0047AB RGB(0,71,171)
+fill [fill] #708090 RGB(112,128,144)
+
+PHILADELPHIA 76ERS
+line [red] #D0103A RGB(208,16,58)
+point [blue] #0046AD RGB(0,70,173)
+
+PHOENIX SUNS
+line [purple] #1C105E RGB(28,16,94)
+point [orange] #E65F20 RGB(230,95,32)
+fill [grey] #B1B3B3 RGB(177,179,179)
+
+PORTLAND TRAIL BLAZERS
+line [black] #000000 RGB(0,0,0)
+point [red] #F0163A RGB(240,22,58)
+fill [grey] #B6BFBF RGB(182,191,191)
+
+SACRAMENTO KINGS
+line [purple] #753BBD RGB(117,59,189)
+point [black] #000000 RGB(0,0,0)
+fill [grey] #8A8D8F RGB(138,141,143)
+
+SAN ANTONIO SPURS
+point [black] #000000 RGB(0,0,0)
+line [grey] #BEC8C9 RGB(190,200,201)
+
+TORONTO RAPTORS
+line [black] #000000 RGB(0,0,0)
+point [red] #B31B1B RGB(179,27,27)
+fill [grey] #708090 RGB(112,128,144)
+
+UTAH JAZZ
+line [blue] #00275D RGB(0,39,93)
+point [yellow] #FF9100 RGB(255,145,0)
+fill [green] #FF9100 RGB(13,64,6)
+
+WASHINGTON WIZARDS
+line [blue] #002244 RGB(0,34,68)
+point [red] #C60C30 RGB(198,12,48)
+fill [grey] #BCC4CC RGB(188,196,204)
