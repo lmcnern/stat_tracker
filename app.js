@@ -11,13 +11,14 @@ $.ajax({
   }
 });
 
+
+
 //Create empty array for usable data
 var myData2 = [];
 
 //Remove all players who played <1300 minutes
 function parser(value, index, ar) {
 	value.MP = parseInt(value.MP);
-	value.PER = parseFloat(value.PER);
 }
 myData.forEach(parser);
 
@@ -27,6 +28,8 @@ function cleanData(value, index, ar) {
 	}
 }
 myData.forEach(cleanData);
+
+
 
 //Graph Player Efficiency Rating
 var graphPER = function() {
