@@ -1,22 +1,26 @@
-var http = require('http');
-var fs = require('fs');
+'use strict';
 
-//404 Response
-function response404(response) {
-  response.writeHead(404, {'Content-type': 'text/plain'});
-  response.write('Sorry! Your page could not be found!!!');
-  response.end();
-}
+var express = require('express'); //grabs from package.JSON
+var app = express();
 
-//Handle User Request
-function onRequest(request, response) {
-  if (request.method == 'GET' && request.url == '/') {
-    response.writeHead(200, {'Content-type': 'text/html'});
-    fs.createReadStream('./index.html').pipe(response);
-  } else {
-    response404(response);
-  }
-}
+app.use(express.static(__dirname + '/'));
 
-http.createServer(onRequest).listen(8888);
-console.log('Server is now running!!!');
+app.get('/', function(request, response) {
+  response.status(200).send('<h1>Hello Stranger!</h1>');
+});
+
+app.get('/public', function(request, response) {
+  response.send('<h1>Hello mate!</h1>');
+});
+
+app.get('/secret', function(request, response) {
+  response.send('<h1>THIS PAGE IS SECRET. GTFO.</h1>');
+});
+
+app.get('/*', function(request, response) {
+  response.status(404).sendFile(__dirname +'/404.html');
+});
+
+app.listen(5000, function() {
+  console.log('Server is running!');
+});
