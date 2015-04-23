@@ -1,19 +1,21 @@
 'use strict'
 
 function jsFunction(value) {
+  machine(value);
+}
 
-
+function machine(input) {
   var barData = {
-    labels: myLabel(sorter(value)),
+    labels: myLabel(sorter(input)),
     datasets: [
       {
-        fillColor: "#66E0FF",
-        strokeColor: "#008FB2",
-        data: myData(sorter(value))
+        fillColor: "#66FF66",
+        strokeColor: "#006600",
+        data: myData(sorter(input))
       },
     ]
   }
 
   var playerChart = document.getElementById("playerChart").getContext("2d");
-  new Chart(playerChart).Bar(barData);
+  var myNewChart = new Chart(playerChart).Bar(barData);
 }
