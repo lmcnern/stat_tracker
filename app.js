@@ -11,6 +11,8 @@ $.ajax({
   }
 });
 
+console.log("hello");
+
 //Create empty array for usable data
 var myData2 = [];
 
@@ -42,10 +44,10 @@ var compFunc = function(a, b) {
 var statMean = function(statCategory) {
   var totalData = 0;
   for (var i = 0; i < myData2.length; i++) {
-    
+
     totalData += myData2[i];
   }
-  var meanData = (totalData / myData2.length); 
+  var meanData = (totalData / myData2.length);
   return meanData;
 }
 
