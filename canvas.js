@@ -9,8 +9,8 @@ function machine(input) {
     labels: myLabel(sorter(input)),
     datasets: [
       {
-        fillColor: "#66FF66",
-        strokeColor: "#006600",
+        fillColor: "#AD5CFF",
+        strokeColor: "#290052",
         data: myData(sorter(input))
       },
     ]
