@@ -5,8 +5,8 @@ function jsFunction(value) {
     labels: myLabel(sorter(value)),
     datasets: [
       {
-        fillColor: "#AD5CFF",
-        strokeColor: "#290052",
+        fillColor: "#66E0FF",
+        strokeColor: "#008FB2",
         data: myData(sorter(value))
       },
     ]
