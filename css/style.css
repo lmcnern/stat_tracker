@@ -52,3 +52,11 @@ body {
   text-decoration: none;
   font-family: 'Raleway', sans-serif;
 }
+
+#email-link {
+  color: #66E0FF;
+  letter-spacing: 1px;
+  font-size: 22;
+  text-decoration: none;
+  font-family: 'Raleway', sans-serif;
+}

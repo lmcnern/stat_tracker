@@ -4,7 +4,7 @@ var subject = ('User Feedback');
 
 var body = ('Leave your comments here!');
 
-$("#emailTo").append('<a href="mailto:' + email +
+$("#emailTo").append('<a id="email-link" href="mailto:' + email +
 
 '?subject=' +subject+
 
