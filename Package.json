@@ -1,6 +1,6 @@
 {
   "name": "NBA_Stat_Tracker",
-  "version": "0.1.0",
+  "version": "0.1.1",
   "description": "Welcome to the jam.",
   "main": "server.js",
   "scripts": {
