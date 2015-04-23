@@ -1,0 +1,20 @@
+{
+  "name": "NBA_Stat_Tracker",
+  "version": "0.1.0",
+  "description": "Welcome to the jam.",
+  "main": "server.js",
+  "scripts": {
+    "start": "node server.js"
+  },
+  "dependencies": {
+    "express": "~4.9.x"
+  },
+  "engines": {
+    "node": "0.12.2"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/justinsrd/stat_tracker"
+  },
+  "license": "MIT"
+}
