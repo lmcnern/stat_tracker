@@ -1,6 +1,8 @@
 'use strict'
 
 function jsFunction(value) {
+
+
   var barData = {
     labels: myLabel(sorter(value)),
     datasets: [

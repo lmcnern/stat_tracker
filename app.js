@@ -42,7 +42,7 @@ var compFunc = function(a, b) {
 var statMean = function(statCategory) {
   var totalData = 0;
   for (var i = 0; i < myData2.length; i++) {
-    myData2[i] = parseFloat([myData2][i]);
+    
     totalData += myData2[i];
   }
   var meanData = (totalData / myData2.length); 
@@ -71,7 +71,7 @@ var myLabel = function(statCategory) {
   for (var i = 0; i < statCategory.length; i++) {
     playerNames.push(statCategory[i][1]);
   }
-  playerNames.push('Mean');
+  //playerNames.push('Mean');
   return playerNames;
 }
 
@@ -81,6 +81,6 @@ var myData = function(statCategory) {
   for (var i = 0; i < statCategory.length; i++) {
     playerData.push(statCategory[i][0]);
   }
-  playerData.push(statMean(statCategory));
+  //playerData.push(statMean(statCategory));
   return playerData;
 }
