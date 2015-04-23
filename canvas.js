@@ -1,11 +1,9 @@
 'use strict'
 
-var e = document.getElementById('selectMenu');
-var strUser = e.options[e.selectedIndex].value;
+// var e = document.getElementById('selectMenu');
+// var strUser = e.options[e.selectedIndex].value;
 
-console.log(strUser);
-
-
+// console.log(strUser);
 
 var StatData = function(label, data) {
   this.label = label;
