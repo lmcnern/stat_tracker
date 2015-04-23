@@ -1,25 +1,7 @@
 'use strict'
 
 function jsFunction(value) {
-    if (value === 'PER') {
-      machine('PER');
-    } else if (value === 'TSP') {
-      machine('TSP');
-    } else if (value === '3PA') {
-      machine('3PA');
-    } else if (value === 'FTAR') {
-      machine('FTAR');
-    } else if (value === 'OWS') {
-      machine('OWS');
-    } else if (value === 'DWS') {
-      machine('DWS');
-    } else if (value === 'TWS') {
-      machine('TWS');
-    } else if (value === 'BPM') {
-      machine('BPM');
-    } else if (value === 'VORP') {
-      machine('VORP');
-    }
+  machine(value);
 }
 
 function machine(input) {
