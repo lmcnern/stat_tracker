@@ -11,8 +11,6 @@ $.ajax({
   }
 });
 
-console.log("hello");
-
 //Create empty array for usable data
 var myData2 = [];
 
