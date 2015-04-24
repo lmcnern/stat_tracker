@@ -1,1 +1,91 @@
-@media (min-width: 700px) {
+/*---------------------------------------------*/
+@media (min-width: 992px) {
+.home-content {
+  width: 30em;
+}
+
+.about-content {
+  width: 30em;
+}
+
+#div-wrap {
+  height: 40vw;
+}
+
+}/*------------END MAX-WIDTH-768px------------*/
+
+@media (max-width: 991px) {
+#left-wrapper {
+  float: none;
+  display: block;
+  margin: 0 auto;
+}
+
+#dom {
+  padding-bottom: 5%;
+}
+
+canvas {
+	width: 90vw;
+}
+
+}/*------------END MIN-WIDTH-992px------------*/
+
+@media (max-width: 767px) {
+#div-wrap {
+  width: 90vw;
+  margin-left: auto;
+  margin-right: auto;
+  margin-top: 10%;
+  margin-bottom: 10%;
+  overflow: hidden;
+  position: relative !important;
+}
+
+#content-wrap {
+  width: 270vw;
+  position: relative;
+  left: 0;
+  transition: left .5s ease-in-out;
+}
+
+.main-content {
+  float: left;
+  width: 90vw;
+  padding-top: 5vw;
+}
+
+#home, 
+#content, 
+#about {
+  width: 90vw;
+}
+
+.home-content {
+  width: 90%;
+}
+
+.about-content {
+  width: 90%;
+}
+
+h1.home-content,
+#home h1,
+#home h4 {
+  margin-left: 5%;
+  text-align: left;
+}
+
+.about-content,
+h1.about-content,
+p.about-content,
+h4.about-content {
+  margin-left: 5%;
+  text-align: left;
+}
+
+#fixed-footer {
+  position: relative;
+}
+
+}/*------------END MAX-WIDTH-767px------------*/

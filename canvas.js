@@ -45,7 +45,7 @@ function machine(input) {
     document.getElementById('dom').innerHTML = '<p class="desc"><span id="blue">Value over replacement player</span> is an estimate of a player\'s contributions over 100 team possessions over the player who replaced him in game.</p>';
   }
 
-  $('#playerChart').replaceWith('<canvas id="playerChart" width="600" height="400"></canvas>');
+  $('#playerChart').replaceWith('<canvas id="playerChart" width="650" height="450"></canvas>');
 
   var barData = {
     labels: myLabel(sorter(input)),
