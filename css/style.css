@@ -62,7 +62,7 @@ body {
 }
 
 #left-wrapper {
-  float:left; 
+  float:left;
 }
 
 #stat-selector {
@@ -82,14 +82,14 @@ body {
 }
 
 #title-dom{
-  color:white; 
-  margin:0; 
+  color:white;
+  margin:0;
   padding:0;
 }
 
 #chart-label {
-  color:white; 
-  margin:0; 
+  color:white;
+  margin:0;
   padding:0;
 }
 
