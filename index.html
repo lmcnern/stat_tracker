@@ -19,49 +19,53 @@
 <!-- Sliding Page Begin -->
       <div id='div-wrap'>
         <div id='content-wrap'>
-          <div id='home' class='main-content'>
-            <h1 class='home-content'>NBA STAT GRAPHER</h1>
-            <h4 class='home-content'>Cool NBA stat grapher. Select one of the many different kinds of basketball statistics available to see them visualized in a graph. All stats are up to date as of the end of the 2014-2015 season, and responsive to your basketball stat needs. We are a team of passionate basketball enthusiasts. We aim to give you, the user, a one of a kind basketball statistics experience. We hope that you find it to be... <span id='blue'>A SLAM DUNK.</span?</h4>
-          </div>
-
-          <div id='content' class='main-content'>
-            <div id='left-wrapper'>
-              <select id='stat-selector' onchange='machine(this.value)'>
-                <option value=''>Please Select a Statistic</option>
-                <option value='PER'>Player Efficiency Rating</option>
-                <option value='TS%'>True Shooting Percentage</option>
-                <option value='3PAr'>3pt Attempt</option>
-                <option value='FTr'>Free Throw Attempt Rate</option>
-                <option value='ORB%'>Offensive Rebound Percentage</option>
-                <option value='DRB%'>Defensive Rebound Percentage</option>
-                <option value='TRB%'>Total Rebound Percentage</option>
-                <option value='AST%'>Assist Percentage</option>
-                <option value='STL%'>Steal Percentage</option>
-                <option value='BLK%'>Block Percentage</option>
-                <option value='TOV%'>Turnover Percentage</option>
-                <option value='USG%'>Usage Percentage</option>
-                <option value='OWS'>Offensive Win Shares</option>
-                <option value='DWS'>Defensive Win Shares</option>
-                <option value='WS'>Win Shares</option>
-                <option value='WS/48'>Win Shares Per/48 Minutes</option>
-                <option value='OBPM'>Offensive Box Plus/Minus</option>
-                <option value='DBPM'>Defensive Box Plus/Minus</option>
-                <option value='BPM'>Box Plus/Minus</option>
-                <option value='VORP'>Value Over Replacement Player</option>
-              </select>
-
-              <div id='dom'>
-              </div>
-            </div> <!-- end left-wrapper -->
-            <div>
+          <div id='wrapper-home'>
+            <div id='home' class='main-content'>
+              <h1 class='home-content'>NBA STAT GRAPHER</h1>
+              <h4 class='home-content'>Cool NBA stat grapher. Select one of the many different kinds of basketball statistics available to see them visualized in a graph. All stats are up to date as of the end of the 2014-2015 season, and responsive to your basketball stat needs. We are a team of passionate basketball enthusiasts. We aim to give you, the user, a one of a kind basketball statistics experience. We hope that you find it to be... <span id='blue'>A SLAM DUNK.</span?</h4>
+            </div>
+          </div>  
+          <div id='wrapper-content'>
+            <div id='content' class='main-content'>
+              <div id='left-wrapper'>
+                <select id='stat-selector' onchange='machine(this.value)'>
+                  <option value=''>Please Select a Statistic</option>
+                  <option value='PER'>Player Efficiency Rating</option>
+                  <option value='TS%'>True Shooting Percentage</option>
+                  <option value='3PAr'>3pt Attempt</option>
+                  <option value='FTr'>Free Throw Attempt Rate</option>
+                  <option value='ORB%'>Offensive Rebound Percentage</option>
+                  <option value='DRB%'>Defensive Rebound Percentage</option>
+                  <option value='TRB%'>Total Rebound Percentage</option>
+                  <option value='AST%'>Assist Percentage</option>
+                  <option value='STL%'>Steal Percentage</option>
+                  <option value='BLK%'>Block Percentage</option>
+                  <option value='TOV%'>Turnover Percentage</option>
+                  <option value='USG%'>Usage Percentage</option>
+                  <option value='OWS'>Offensive Win Shares</option>
+                  <option value='DWS'>Defensive Win Shares</option>
+                  <option value='WS'>Win Shares</option>
+                  <option value='WS/48'>Win Shares Per/48 Minutes</option>
+                  <option value='OBPM'>Offensive Box Plus/Minus</option>
+                  <option value='DBPM'>Defensive Box Plus/Minus</option>
+                  <option value='BPM'>Box Plus/Minus</option>
+                  <option value='VORP'>Value Over Replacement Player</option>
+                </select>
+                <div id='dom'>
+                </div>
+              </div> <!-- end left-content-wrapper -->
+              <div>
               <canvas id='playerChart'></canvas>
+              </div>
             </div>
           </div>
           <div id='about' class='main-content'>
-            <h1 class='about-content'>OUR TEAM</h1>
-            <p class='about-content'>We are a team of passionate individuals dedicated to bringing you basketball statistics on demand, in a responsive and generally attractive looking chart of exciting data. We love giving thumbs up and high fives.</p>
-            <h4 class='about-content'>Compliments?  Comments?  Concerns?</h4>
-            <p id='emailTo' class='about-content'></p>
+            <div id='wrapper-about'>
+              <h1 class='about-content'>OUR TEAM</h1>
+              <p class='about-content'>We are a team of passionate individuals dedicated to bringing you basketball statistics on demand, in a responsive and generally attractive looking chart of exciting data. We love giving thumbs up and high fives.</p>
+              <h4 class='about-content'>Compliments?  Comments?  Concerns?</h4>
+              <p id='emailTo' class='about-content'></p>
+            </div>
           </div>
         </div>
       </div>

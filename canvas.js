@@ -66,7 +66,7 @@ function machine(input) {
     scaleFontColor: 'rgba(255,255,255,.8)',
     scaleLineColor: 'rgba(255,255,255,1)',
     scaleShowGridLines : true,
-    scaleGridLineColor : 'rgba(120,120,120,.65)'
+    scaleGridLineColor : 'rgba(120,120,120,.65)',
   });
 }
 
