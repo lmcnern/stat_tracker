@@ -1,75 +1,85 @@
 <!DOCTYPE>
-<html lang="en">
+<html lang='en'>
   <head>
-    <link rel="stylesheet" type="text/css" href="css/style.css"/>
-    <link rel="stylesheet" type="text/css" href="css/component.css"/>
-    <link rel="stylesheet" type="text/css" href="css/slider.css"/>
-    <link rel="shortcut icon" href="img/favicon.png" type="image/x-icon"/>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel='stylesheet' type='text/css' href='css/style.css'/>
+    <link rel='stylesheet' type='text/css' href='css/component.css'/>
+    <link rel='stylesheet' type='text/css' href='css/slider.css'/>
+    <link rel='shortcut icon' href='img/favicon.png' type='image/x-icon'/>
+    <meta charset='UTF-8'>
+    <meta name='viewport' content='width=device-width, initial-scale=1'>
     <title>NBA Stat Tracker</title>
   </head>
   <body>
-    <div id="wrap">
-      <div id="fixed-header">
+    <div id='wrap'>
+      <div id='fixed-header'>
 
         <!-- Commented out to fix bugs -->
-        <a href="." id="logo-link">NBA STAT TRACKER!</a>
+        <a href='.' id='logo-link'>NBA STAT TRACKER</a>
       </div>
 
 <!-- Sliding Page Begin -->
-      <div id="div-wrap">
-        <div id="content-wrap">
-          <div id="home" class="main-content">
-            <h1 class="home-content">NBA STAT TRACKER</h1>
-            <h4 class="home-content">Cool NBA stat tracker API. Select one of the many different kinds of basketball statistics available to see them visualized in a graph. All stats are up to date and responsive to your basketball stats need. We are a team of passionate basketball and basketball accessories fans. We aim to give you, the user, a one of a kind basketball statistics experience. We hope that you find it to be...a slam dunk.</h4>
+      <div id='div-wrap'>
+        <div id='content-wrap'>
+          <div id='home' class='main-content'>
+            <h1 class='home-content'>NBA STAT TRACKER</h1>
+            <h4 class='home-content'>Cool NBA stat tracker grapher. Select one of the many different kinds of basketball statistics available to see them visualized in a graph. All stats are up to date as of the end of the 2014-2015 season, and responsive to your basketball stat needs. We are a team of passionate basketball enthusiasts. We aim to give you, the user, a one of a kind basketball statistics experience. We hope that you find it to be... A SLAM DUNK.</h4>
           </div>
 
-          <div id="content" class="main-content">
-            <select id="stat-selector" onchange="jsFunction(this.value)">
-              <option value="">Please Select a Statistic</option>
-              <option value="PER">Player Efficiency Rating</option>
-              <option value="TS%">True Shooting Percentage</option>
-              <option value="3PAr">3pt Attempt</option>
-              <option value="FTr">Free Throw Attempt Rate</option>
-              <option value="ORB%">Offensive Rebound Percentage</option>
-              <option value="DRB%">Defensive Rebound Percentage</option>
-              <option value="TRB%">Total Rebound Percentage</option>
-              <option value="AST%">Assist Percentage</option>
-              <option value="STL%">Steal Percentage</option>
-              <option value="BLK%">Block Percentage</option>
-              <option value="TOV%">Turnover Percentage</option>
-              <option value="USG%">Usage Percentage</option>
-              <option value="OWS">Offensive Win Shares</option>
-              <option value="DWS">Defensive Win Shares</option>
-              <option value="WS">Win Shares</option>
-              <option value="WS/48">Win Shares Per/48 Minutes</option>
-              <option value="OBPM">Offensive Box Plus/Minus</option>
-              <option value="DBPM">Defensive Box Plus/Minus</option>
-              <option value="BPM">Box Plus/Minus</option>
-              <option value="VORP">Value Over Replacement Player</option>
-            </select>
-            <canvas id="playerChart" width="600" height="400"></canvas>
+          <div id='content' class='main-content'>
+            <div id='left-wrapper'>
+              <select id='stat-selector' onchange='machine(this.value)'>
+                <option value=''>Please Select a Statistic</option>
+                <option value='PER'>Player Efficiency Rating</option>
+                <option value='TS%'>True Shooting Percentage</option>
+                <option value='3PAr'>3pt Attempt</option>
+                <option value='FTr'>Free Throw Attempt Rate</option>
+                <option value='ORB%'>Offensive Rebound Percentage</option>
+                <option value='DRB%'>Defensive Rebound Percentage</option>
+                <option value='TRB%'>Total Rebound Percentage</option>
+                <option value='AST%'>Assist Percentage</option>
+                <option value='STL%'>Steal Percentage</option>
+                <option value='BLK%'>Block Percentage</option>
+                <option value='TOV%'>Turnover Percentage</option>
+                <option value='USG%'>Usage Percentage</option>
+                <option value='OWS'>Offensive Win Shares</option>
+                <option value='DWS'>Defensive Win Shares</option>
+                <option value='WS'>Win Shares</option>
+                <option value='WS/48'>Win Shares Per/48 Minutes</option>
+                <option value='OBPM'>Offensive Box Plus/Minus</option>
+                <option value='DBPM'>Defensive Box Plus/Minus</option>
+                <option value='BPM'>Box Plus/Minus</option>
+                <option value='VORP'>Value Over Replacement Player</option>
+              </select>
+
+              <div id='dom'>
+              </div>
+            </div> <!-- end left-wrapper -->
+            
+            <div>
+              <!--<p id='title-dom' style='float:right;'></p>
+              <br>-->
+              <canvas id='playerChart' width='600' height='400'></canvas>
+            </div>
           </div>
 
-          <div id="about" class="main-content">
-            <h1 class="about-content">OUR TEAM</h1>
-            <p class="about-content">We are a team of passionate individuals dedicated to bringing you basketball statistics on demand, in a responsive and generally attractive looking chart of exciting data. We love giving thumbs up and high fives.</p>
-            <h4 class="about-content">Compliments?  Comments?  Concerns?</h4>
-            <p id="emailTo" class="about-content"></p>
+          <div id='about' class='main-content'>
+            <h1 class='about-content'>OUR TEAM</h1>
+            <p class='about-content'>We are a team of passionate individuals dedicated to bringing you basketball statistics on demand, in a responsive and generally attractive looking chart of exciting data. We love giving thumbs up and high fives.</p>
+            <h4 class='about-content'>Compliments?  Comments?  Concerns?</h4>
+            <p id='emailTo' class='about-content'></p>
           </div>
         </div>
       </div>
 <!-- Sliding Page End -->
 
 <!-- Nav Footer Begin -->
-      <div id="fixed-footer">
-        <div class="container">
-          <div class="dotstyle dotstyle-fillin">
+      <div id='fixed-footer'>
+        <div class='container'>
+          <div class='dotstyle dotstyle-fillin'>
             <ul>
-              <li class="current" id="content-links"><a href="#home" data-pos="0vw">Home</a></li>
-              <li id="content-links"><a href="#content" data-pos="-78vw">Content</a></li>
-              <li id="content-links"><a href="#about" data-pos="-156vw">About</a></li>
+              <li class='current' id='content-links'><a href='#home' data-pos='0vw'>Home</a></li>
+              <li id='content-links'><a href='#content' data-pos='-78vw'>Content</a></li>
+              <li id='content-links'><a href='#about' data-pos='-156vw'>About</a></li>
             </ul>
           </div>
         </div>
@@ -77,22 +87,15 @@
 <!-- Nav Footer End -->
 
     </div>
-    <script src="lib/jquery.js"></script>
-    <script src="lib/dots.js"></script>
-    <script src="lib/Chart.min.js"></script>
-    <script src="js/page_layout.js"></script>
-    <script src="js/about_page.js"></script>
-    <script src="app.js"></script>
-    <script src="canvas.js"></script>
-    <script src="server.js"></script>
-    <script>
-      [].slice.call(document.querySelectorAll('.dotstyle > ul')).forEach(function(nav) {
-        new DotNav(nav, {
-          callback: function(idx) {
-          }
-        });
-      });
-    </script>
+    <script src='lib/jquery.js'></script>
+    <script src='lib/dots.js'></script>
+    <script src='lib/Chart.min.js'></script>
+    <script src='js/page_layout.js'></script>
+    <script src='js/about_page.js'></script>
+    <script src='app.js'></script>
+    <script src='canvas.js'></script>
+    <script src='server.js'></script>
+    <script src='js/slice.js'></script>
   </body>
 </html>
 

@@ -38,32 +38,26 @@ var compFunc = function(a, b) {
   return 0;
 }
 
-// Calculate Mean
-var statMean = function(statCategory) {
-  var totalData = 0;
-  for (var i = 0; i < myData2.length; i++) {
-
-    totalData += myData2[i];
-  }
-  var meanData = (totalData / myData2.length);
-  return meanData;
-}
-
-
-
 // Makes a top 10 array with [data, player]
 var sorter = function(statCategory) {
   var sorter_arr = [];
+  var totalData = 0;
   for (var i = 0; i < myData2.length; i++) {
     var sorter_tempArr = [];
-    sorter_tempArr.push(myData2[i][statCategory]);
+    var hi = parseFloat(myData2[i][statCategory]);
+    sorter_tempArr.push(hi);
+    totalData += hi;
     sorter_tempArr.push(myData2[i]['Player']);
     sorter_arr.push(sorter_tempArr);
   }
+
   var sorter_arr10 = sorter_arr.sort(compFunc).reverse().splice(0, 9);
+  
+  // Calculate & Push League Average
+  sorter_arr10.push([(totalData / myData2.length).toPrecision(3), 'Average']);
+
   return sorter_arr10;
 }
-
 
 // Returns array of top 10 Players
 var myLabel = function(statCategory) {
