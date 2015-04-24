@@ -60,3 +60,39 @@ body {
   text-decoration: none;
   font-family: 'Raleway', sans-serif;
 }
+
+#left-wrapper {
+  float:left; 
+}
+
+#stat-selector {
+  display: block;
+  margin: 0 auto;
+}
+
+#dom {
+  margin-top: 15%;
+  width: 250px;
+}
+
+.desc {
+  text-align: center;
+  margin: 0;
+  padding: 0;
+}
+
+#title-dom{
+  color:white; 
+  margin:0; 
+  padding:0;
+}
+
+#chart-label {
+  color:white; 
+  margin:0; 
+  padding:0;
+}
+
+#blue{
+  color: #66E0FF;
+}
